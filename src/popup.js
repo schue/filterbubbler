@@ -1,7 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Popup extends React.Component {
+//import 'framework7/dist/css/framework7.ios.min.css';
+//import 'framework7/dist/css/framework7.ios.colors.min.css';
+
+import {
+        Framework7App, Statusbar, Panel, View, Navbar, Pages, Page, ContentBlock, ContentBlockTitle, 
+        List, ListItem, Views, NavLeft, Link, NavCenter, NavRight, GridRow, GridCol, Button, Popup,
+            LoginScreen, LoginScreenTitle, ListButton, ListLabel, FormLabel, FormInput
+} from 'framework7-react';
+
+
+class FBBLPopup extends React.Component {
   constructor(props) {
     super(props);
     console.log('Bubble popup');
@@ -92,4 +102,4 @@ class Popup extends React.Component {
   }
 }
 
-ReactDOM.render(<Popup/>, document.getElementById('app'));
+ReactDOM.render(<FBBLPopup/>, document.getElementById('app'));
